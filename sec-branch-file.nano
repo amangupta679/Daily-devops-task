@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Bash script to enter details
+
+# Author: Aman Gupta
+
+# Date modified: 9/19/2023
+
+# Define the name
+
+name="Aman Gupta"
+
+# Define the company name
+
+company="Prolifics"
+
+# Get the current date
+
+current_date=$(date)
+
+# Get the current time
+
+current_time=$(date "+%T")
+
+# Create a new file and append text to it
+
+filename="second-name.txt"
+
+echo "Hello, this is the second file." > "$filename"
+
+# Display a message indicating that the file has been appended
+
+# echo "The file $filename has been appended with the message 'Hello, this is the second file.'"
+
+# Display a calendar with the current date
+
+echo cal
+# Print your name and the company name
+
+echo "My name is: $name"
+echo "Company name is: $company"
+
+# Print the current date and time
+
+echo "The current date is: $current_date"
+echo "The current time is: $current_time"
+
