@@ -45,3 +45,5 @@ echo "Company name is: $company"
 echo "The current date is: $current_date"
 echo "The current time is: $current_time"
 
+
+
