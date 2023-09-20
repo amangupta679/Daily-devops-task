@@ -1,0 +1,160 @@
+#!/bin/bash 
+#Author : Aman Gupta 
+#Date :9/19/2023
+
+#while loop script 
+valid=true
+count=1
+while [ $valid ]
+do 
+echo $count 
+if [ $count -eq 5 ] ;
+then 
+break 
+fi
+((count++))
+done 
+
+
+# using the loops 
+
+for ((counter=10 ; counter>0 ; counter--)) 
+do 
+echo -n "$counter"
+done
+printf "\n"
+
+# getting input from the user 
+
+echo "enter your name "
+read name 
+echo "welcome $name to Linux"
+
+#using if statement 
+n=10 
+if [ $n -lt 10 ];
+then 
+echo "it is a ne digit number"
+else
+echo "it is two digit number"
+fi 
+
+
+# using if statement with and logic 
+
+echo "enter the user name"
+read username
+echo "enter password"
+read passwords 
+if [[ ( $username == "admin" && $password == "secret" ) ]]; then 
+echo "valid user"
+else
+echo "invalid user"
+fi 
+
+
+# using if statemeent or logic 
+echo "enteer any number "
+
+read n  
+if [[ ( $n -eq 15 || $n -eq 45 ) ]]
+then 
+echo "won"
+else
+echo "loose" 
+fi
+
+#using else if statement 
+
+echo "enter a number"
+read n 
+if [ $n -eq 101 ] ; 
+then 
+echo "you gott 1st price" 
+elif [ $n -eq 510 ] ; 
+then 
+echo "2nd price" 
+elif [$n -eq 999]; 
+then 
+echo "3rd pirce" 
+else 
+echo "sry  blnt"
+fi
+
+
+
+
+# using case statement 
+#echo " # using case statement "
+#echo "enter a number " 
+#read n 
+#case $n in 
+#101)
+#echo " you got 1st prize" ; 
+#510)
+#echo " 2nd price " 
+#999)
+#echo "3rd price ";
+#*)
+#echo "sry" ;
+#esac
+
+
+
+#!/bin/bash
+
+echo "Enter a number (1-7):"
+read day
+
+case $day in
+    1)
+        echo "Monday"
+        ;;
+    2)
+        echo "Tuesday"
+        ;;
+    3)
+        echo "Wednesday"
+        ;;
+    4)
+        echo "Thursday"
+        ;;
+    5)
+        echo "Friday"
+        ;;
+    6)
+        echo "Saturday"
+        ;;
+    7)
+        echo "Sunday"
+        ;;
+    *)
+        echo "Invalid input. Please enter a number between 1 and 7."
+        ;;
+esac
+
+# get agrument from command line 
+
+echo " # GET ARGUMNET FROM COMMAND LINE  "
+
+echo "Total arguments : $#"
+echo "1ST Argument = $1"
+echo "2nd argument = $2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
